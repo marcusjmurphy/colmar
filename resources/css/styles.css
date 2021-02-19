@@ -21,6 +21,10 @@ a:link , a:visited{
     color: #9b9b9b;
 }
 
+.nobold {
+    font-weight: normal;
+}
+
 .bold700 {
     font-weight: 700;
 }
@@ -29,29 +33,43 @@ a:link , a:visited{
     font-weight: 900;
 }
 
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.spacebetween {
+    justify-content: space-between;
+}
+
 /* Header Styling */
 
-header {
-    display: block;
-    height: 64px;
-    padding: 16px 24px;
+nav li {
+    padding-left: 16px;
     line-height: 32px;
 }
 
-.home img , .home h1 {
-    float: left;
+#navleft , #navright {
+    position: fixed;
+    top: 0;
+    height: 64px;
+    line-height: 32px;
+    padding: 16px 24px;
+    z-index: 100;
 }
 
-nav li {
-    float: right;
-    padding-left: 16px;
+#navleft {
+    left: 0;
 }
 
-#header-left > a:hover {
+#navright {
+    right: 0;
+}
+
+#navleft a:hover {
     text-decoration: none;
 }
 
-#header-right a:hover {
-    text-decoration: underline;
+#navright a:hover {
     font-weight: 900;
 }
