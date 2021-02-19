@@ -1,8 +1,57 @@
+/* Universal Styling */
+
 html {
     font-family: 'Raleway', Arial, sans-serif;
 }
 
-#header {
+a:link , a:visited{
+    text-decoration: none;
+    color: inherit;
+  }
+
+.darkgray {
+    color: #4a4a4a;
+}
+
+.medgray {
+    color: #767676;
+}
+
+.lightgray {
+    color: #9b9b9b;
+}
+
+.bold700 {
+    font-weight: 700;
+}
+
+.bold900 {
+    font-weight: 900;
+}
+
+/* Header Styling */
+
+header {
+    display: block;
+    height: 64px;
+    padding: 16px 24px;
     line-height: 32px;
-    margin: 16px 24px;
+}
+
+.home img , .home h1 {
+    float: left;
+}
+
+nav li {
+    float: right;
+    padding-left: 16px;
+}
+
+#header-left > a:hover {
+    text-decoration: none;
+}
+
+#header-right a:hover {
+    text-decoration: underline;
+    font-weight: 900;
 }
