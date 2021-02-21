@@ -13,32 +13,32 @@
     <body>
 
         <!--Header Section-->
-        <header>
+        <header class="flex-container spacebetween width100">
             <div id="navleft" class="desktop">
                 <a href="./index.html" class="flex-container">
                     <img src="./resources/images/ic-logo.svg" alt="Colmar logo">
                     <p class="darkgray bold700">COLMAR<span class="lightgray nobold">ACADEMY</span></p>
                 </a>
             </div>
-            <div id="navright" class="darkgray flex-container spaceevenly">
-                <div class="flex-item">
+            <nav id="navright" class="darkgray flex-container spaceevenly">
+                <div>
                     <a href="./index.html">
                         <span class="mobile"><img src="./resources/images/ic-logo.svg" alt="Colmar logo"></span>
                     </a>
                 </div>
-                <div class="flex-item">
+                <div>
                     <a href="#">
                         <span class="desktop">On campus</span>
                         <span class="mobile"><img src="./resources/images/ic-on-campus.svg" alt=""></span>
                     </a>
                 </div>
-                <div class="flex-item">
+                <div>
                     <a href="#">
                         <span class="desktop">Online</span>
                         <span class="mobile"><img src="./resources/images/ic-online.svg" alt=""></span>
                     </a>
                 </div>
-                <div class="flex-item">
+                <div>
                     <a href="#">
                         <span class="desktop">For companies</span>
                     </a>
@@ -47,15 +47,21 @@
                         <span class="mobile"><img src="./resources/images/ic-login.svg" alt=""></span>
                     </a>
                 </div>
-            </div>
+            </nav>
         </header>
 
         <!--Main Content-->
         <main>
             <!--Section One-->
-            <div id="sectionone" class="bck-medgray">
-                <img src="./resources/images/banner.jpg" alt="Group reading at a table">
-
+            <div id="section1" class="flex-container bck-medgray">
+                <div class="large-media">
+                    <img src="./resources/images/banner.jpg" alt="Group reading on a picnic table">
+                </div>
+                <div id="bannertext" class="flex-container flex-col center">
+                    <h1 class="darkgray bold900">Learn something new everyday</h1>
+                    <h2 class="darkgray bold700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                    <a href="#"><p class="width100 bck-darkgray">Start here</p></a>
+                </div>
             </div>
 
         </main>

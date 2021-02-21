@@ -49,23 +49,55 @@ a:link , a:visited{
     background-color: #4a4a4a;
 }
 
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
 .flex-container {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
 }
 
 .spaceevenly {
     justify-content: space-evenly;
 }
 
+.spacebetween {
+    justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
+}
+
+.width100 {
+    width: 100%;
+}
+
 /* Header Styling */
 
-#navleft , #navright {
-    position: fixed;
+header {
+    position: sticky;
     top: 0;
-    height: 32px;
-    padding: 16px 24px;
     z-index: 100;
     background-color: #fff;
+}
+
+#navleft , #navright {
+    height: 32px;
+    padding: 16px 24px;
     line-height: 32px;
 }
 
@@ -78,11 +110,36 @@ a:link , a:visited{
 }
 
 /* Main Section */
+.large-media img , video {
+    width: 100%;
+    height: auto;
+}
+
+#bannertext {
+    padding: 16px;
+}
+
+#bannertext p {
+    text-align: center;
+    padding: 8px 0;
+    color: #fff;
+    margin: 8px 0 16px 0;
+}
+
+#bannertext h1 , #bannertext h2 {
+    margin: 16px 0;
+}
+
+#bannertext a:hover {
+    font-weight: 900;
+}
 
 /* Media Queries */
 
-@media only screen and (max-width: 640px) {
 /* Mobile specific styling */
+@media only screen and (max-width: 640px) {
+
+    /* Universal Mobile Styling */
     .desktop {
         display: none;
     }
@@ -98,12 +155,15 @@ a:link , a:visited{
     }
 }
 
-@media only screen and (min-width: 641px) {
 /* Desktop specific styling */
+@media only screen and (min-width: 641px) {
+
+    /* Universal Desktop Styling */
     .mobile {
         display: none;
     }
 
+    /* Header Desktop Styling */
     #navleft {
         left: 0;
     }
@@ -114,5 +174,20 @@ a:link , a:visited{
 
     #navright a {
         padding-left: 16px;
+    }
+
+    /* Main Desktop Styling */
+    .large-media {
+        padding: 32px 8px 32px 24px;
+        width: 60%;
+    }
+
+    #bannertext {
+        width: 23%;
+        height: auto;
+    }
+
+    #bannertext h2 {
+        padding-bottom: 8px;
     }
 }
