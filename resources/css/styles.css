@@ -2,6 +2,7 @@
 
 html {
     font-family: 'Raleway', Arial, sans-serif;
+    font-size: 12px;
 }
 
 a:link , a:visited{
@@ -29,6 +30,10 @@ a:link , a:visited{
     font-weight: 700;
 }
 
+.bold800 {
+    font-weight: 750;
+}
+
 .bold900 {
     font-weight: 900;
 }
@@ -50,11 +55,11 @@ a:link , a:visited{
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .flex-container {
@@ -95,10 +100,14 @@ header {
     background-color: #fff;
 }
 
+header p , header span {
+    font-size: 1.25rem;
+}
+
 #navleft , #navright {
-    height: 32px;
-    padding: 16px 24px;
-    line-height: 32px;
+    height: 2.5rem;
+    padding: 1.33rem 2rem;
+    line-height: 2.5rem;
 }
 
 #navleft a:hover {
@@ -110,6 +119,10 @@ header {
 }
 
 /* Main Section */
+main img {
+    filter: drop-shadow(0 0 2rem black);
+}
+
 .large-media img , video {
     width: 100%;
     height: auto;
@@ -121,13 +134,18 @@ header {
 
 #bannertext p {
     text-align: center;
-    padding: 8px 0;
+    /* padding: 8px 0; */
+    line-height: 2.5rem;
     color: #fff;
     margin: 8px 0 16px 0;
 }
 
 #bannertext h1 , #bannertext h2 {
     margin: 16px 0;
+}
+
+#bannertext h2 {
+    line-height: 2rem;
 }
 
 #bannertext a:hover {
@@ -178,12 +196,13 @@ header {
 
     /* Main Desktop Styling */
     .large-media {
-        padding: 32px 8px 32px 24px;
+        padding: 32px 24px;
         width: 60%;
     }
 
     #bannertext {
-        width: 23%;
+        width: 27.27%;
+        max-width: 385px;
         height: auto;
     }
 
