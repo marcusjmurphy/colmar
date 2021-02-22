@@ -1,5 +1,9 @@
 /* Universal Styling */
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 12px;
@@ -20,6 +24,10 @@ a:link , a:visited{
 
 .lightgray {
     color: #9b9b9b;
+}
+
+.bluelink {
+    color: #4a90e2;
 }
 
 .nobold {
@@ -80,6 +88,9 @@ p {
 
 .flex-container {
     display: flex;
+}
+
+.wrap {
     flex-wrap: wrap;
 }
 
@@ -103,6 +114,39 @@ p {
     justify-content: center;
 }
 
+.a-center {
+    align-items: center;
+}
+
+.border {
+    border: solid #d8d8d8 1px;
+}
+
+.border-topbot {
+    border: solid #d8d8d8;
+    border-width: 1px 0;
+}
+
+.border-LR {
+    border: solid #d8d8d8;
+    border-width: 0 1px; 
+}
+
+.border-bot {
+    border: solid #d8d8d8;
+    border-width: 0 0 1px 0;
+}
+
+.border-right {
+    border: solid #d8d8d8;
+    border-width: 0 1px 0 0;   
+}
+
+.border-left {
+    border: solid #d8d8d8;
+    border-width: 0 0 0 1px;
+}
+
 .width100 {
     width: 100%;
 }
@@ -114,6 +158,8 @@ header {
     top: 0;
     z-index: 100;
     background-color: #fff;
+    padding-bottom: 32px;
+    line-height: 64px;
 }
 
 header p , header span {
@@ -122,7 +168,7 @@ header p , header span {
 
 #navleft , #navright {
     height: 2.5rem;
-    padding: 1.33rem 2rem;
+    padding: 1.3333rem 2rem;
     line-height: 2.5rem;
 }
 
@@ -135,13 +181,23 @@ header p , header span {
 }
 
 /* Main Section Styling*/
-main img {
-    filter: drop-shadow(0 0 2rem #000);
+.large-media img {
+    filter: drop-shadow(0 0 1rem #000);
 }
 
-.large-media img , video {
-    width: 100%;
+.sml-brdr-box figure img {
+    filter: drop-shadow(0 0 0.5rem #000);
+}
+
+.large-media img , video , .sml-brdr-box figure img {
+    max-width: 100%;
     height: auto;
+    display: block;
+}
+
+.sml-brdr-box figure {
+    height: auto;
+    margin: 1.25rem;
 }
 
 /* Section 1 Styling*/
@@ -184,6 +240,22 @@ main img {
     line-height: 1.5rem;
 }
 
+.s2side-text {
+    padding-left: 16px;
+}
+
+.s2side-text h3 , .s2side-text p {
+    padding: 4px 0;
+}
+
+.s2side-text a:hover {
+    font-weight: 700;
+}
+
+.sml-brdr-box {
+    padding-right: 1.25rem;
+}
+
 /* Media Queries */
 
 /* Mobile specific styling */
@@ -202,6 +274,10 @@ main img {
     #navright img {
         height: 100%;
         width: auto;
+    }
+
+    .sml-brdr-box figure {
+        margin-top: 44px;
     }
 }
 
@@ -233,12 +309,25 @@ main img {
     }
 
     #s1text {
-        width: 27.27%;
+        width: 40%;
         max-width: 385px;
         height: auto;
     }
 
     #s1text h2 {
         padding-bottom: 8px;
+    }
+
+    .right-box {
+        width: 40%;
+        padding-top: 16px;
+    }
+
+    .sml-brdr-box figure {
+        width: 35%;
+    }
+
+    .s2side-text {
+        width: 65%;
     }
 }
