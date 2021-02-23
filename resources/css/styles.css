@@ -14,6 +14,32 @@ a:link , a:visited{
     color: inherit;
   }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.6667rem;
+}
+
+h4 {
+    font-size: 1.3333rem;
+}
+
+h6 {
+    font-size: 0.9167rem;
+}
+
+p {
+    font-size: 1.0833rem;
+}
+
+/* Styling Classes */
+
 .darkgray {
     color: #4a4a4a;
 }
@@ -62,28 +88,24 @@ a:link , a:visited{
     background-color: #4a4a4a;
 }
 
-h1 {
-    font-size: 3rem;
+.bck-white {
+    background-color: #fff;
 }
 
-h2 {
-    font-size: 2.25rem;
+.text-center {
+    text-align: center;
 }
 
-h3 {
-    font-size: 1.6667rem;
+.uppercase {
+    text-transform: uppercase;
 }
 
-h4 {
-    font-size: 1.3333rem;
+.capitalize {
+    text-transform: capitalize;
 }
 
-h6 {
-    font-size: 0.9167rem;
-}
-
-p {
-    font-size: 1.0833rem;
+.lowercase {
+    text-transform: lowercase;
 }
 
 .flex-container {
@@ -110,11 +132,11 @@ p {
     justify-content: space-between;
 }
 
-.center {
+.content-center {
     justify-content: center;
 }
 
-.a-center {
+.align-center {
     align-items: center;
 }
 
@@ -157,7 +179,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #fff;
     padding-bottom: 32px;
     line-height: 64px;
 }
@@ -189,7 +210,7 @@ header p , header span {
     filter: drop-shadow(0 0 0.5rem #000);
 }
 
-.large-media img , video , .sml-brdr-box figure img {
+.large-media img , video , .sml-brdr-box figure img , .major figure img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -206,7 +227,6 @@ header p , header span {
 }
 
 #s1text a {
-    text-align: center;
     line-height: 2.72rem;
     color: #fff;
     margin: 8px 0 16px 0;
@@ -253,6 +273,38 @@ header p , header span {
     text-decoration: underline;
 }
 
+/* Section 3 Styling */
+#section3 , #section3 > h2 {
+    padding: 16px;
+}
+
+.major {
+    padding-bottom: 16px;
+    margin: 16px;
+}
+
+.major figure {
+    margin-bottom: 8px;
+}
+
+.major-title {
+    padding: 8px 16px;
+    height: 56px;
+    flex-shrink: 0;
+}
+
+.major .uppercase {
+    padding-left: 16px;
+    height: 13px;
+    flex-shrink: 0;
+}
+
+.capitalize {
+    padding: 8px 16px;
+    flex: 3.5 0 42px;
+    line-height: 14px;
+}
+
 /* Media Queries */
 
 /* Mobile specific styling */
@@ -288,6 +340,27 @@ header p , header span {
     .s2side-text {
         margin-left: 16px;
         margin-bottom: 44px;
+    }
+
+    #section3 {
+        padding-bottom: 24px;
+        border: solid #d8d8d8;
+        border-width: 0 0 1px 0;
+    }
+
+    #section3 h2 {
+        padding-bottom: 8px;
+    }
+
+    .major {
+        width: 100%;
+        padding-bottom: 8px;
+        margin: 8px 16px;
+        background-color: #d8d8d8;
+    }
+
+    .major-title {
+        padding: 6px 16px;
     }
 }
 
@@ -343,5 +416,14 @@ header p , header span {
 
     .s2side-text {
         width: 65%;
+    }
+
+    #section3 {
+        padding: 16px 72px;
+    }
+
+    .major {
+        width: 26%;
+        min-height: 267px;
     }
 }
