@@ -7,12 +7,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="27px"
-   height="27px"
-   viewBox="0 0 27 27"
+   width="30"
+   height="28"
+   viewBox="-4 -4 30 28"
    version="1.1"
    id="svg27"
-   sodipodi:docname="ic-on-campus.svg"
+   sodipodi:docname="ic-online-fixed.svg"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
   <metadata
      id="metadata31">
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>ic_onCampus</dc:title>
+        <dc:title>ic_online</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,25 +39,30 @@
      inkscape:window-height="1001"
      id="namedview29"
      showgrid="false"
-     inkscape:zoom="30.740741"
-     inkscape:cx="13.5"
-     inkscape:cy="13.5"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="29.642857"
+     inkscape:cx="11"
+     inkscape:cy="12"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg27" />
+     inkscape:current-layer="svg27"
+     inkscape:document-rotation="0" />
   <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
   <title
-     id="title2">ic_onCampus</title>
+     id="title2">ic_online</title>
   <desc
      id="desc4">Created with Sketch.</desc>
   <defs
      id="defs19">
     <filter
-       x="-50%"
-       y="-50%"
-       width="200%"
-       height="200%"
+       x="-0.5"
+       y="-0.5"
+       width="2"
+       height="2"
        filterUnits="objectBoundingBox"
        id="filter-1">
       <feOffset
@@ -93,10 +98,11 @@
      stroke="none"
      stroke-width="1"
      fill="none"
-     fill-rule="evenodd">
+     fill-rule="evenodd"
+     transform="translate(-4,-2)">
     <g
        id="prog2_pro3_Mobile-Portrait_opt2-Copy-2"
-       transform="translate(-93.000000, -18.000000)"
+       transform="translate(-185,-17)"
        fill="#000000">
       <g
          id="nav">
@@ -104,10 +110,10 @@
            id="Group-6"
            filter="url(#filter-1)">
           <g
-             id="ic_onCampus"
-             transform="translate(96.000000, 20.000000)">
+             id="ic_online"
+             transform="translate(189,19)">
             <path
-               d="M20,2 L20,4 L15,4 L11.53,9 L14,9 L14,11 L12.46,11 L16.17,19 L13.97,19 L13.04,17 L4.38,17 L3.35,19 L1.1,19 L5.23,11 L5,11 C4.55,11 4.17,10.7 4.04,10.3 L0.87,0.84 L1.82,0.5 C2.34,0.34 2.91,0.63 3.08,1.15 L5.72,9 L10.1,9 L13.57,4 L10,4 L10,2 L20,2 L20,2 Z M7.5,11 L5.42,15 L12.11,15 L10.26,11 L7.5,11 Z"
+               d="M 20,12 H 2 V 2 H 20 Z M 20,0 H 2 C 0.89,0 0,0.89 0,2 v 12 c 0,1.10457 0.8954305,2 2,2 h 7 l -2,3 v 1 h 8 v -1 l -2,-3 h 7 c 1.104569,0 2,-0.89543 2,-2 V 2 C 22,0.89 21.1,0 20,0 Z"
                id="Shape" />
           </g>
         </g>
