@@ -197,7 +197,7 @@ header p , header span {
 
 .sml-brdr-box figure {
     height: auto;
-    margin: 1.25rem;
+    margin: 1.3333rem;
 }
 
 /* Section 1 Styling*/
@@ -250,16 +250,13 @@ header p , header span {
 
 .s2side-text a:hover {
     font-weight: 700;
-}
-
-.sml-brdr-box {
-    padding-right: 1.25rem;
+    text-decoration: underline;
 }
 
 /* Media Queries */
 
 /* Mobile specific styling */
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 720px) {
 
     /* Universal Mobile Styling */
     .desktop {
@@ -272,17 +269,30 @@ header p , header span {
     }
 
     #navright img {
-        height: 100%;
+        height: 32px;
         width: auto;
     }
 
-    .sml-brdr-box figure {
-        margin-top: 44px;
+    #section1 {
+        justify-content: center;
+    }
+
+    #section1 , .sml-brdr-box {
+        flex-wrap: wrap;
+    }
+
+    .sml-brdr-box img {
+        width: 100%;
+    }
+
+    .s2side-text {
+        margin-left: 16px;
+        margin-bottom: 44px;
     }
 }
 
 /* Desktop specific styling */
-@media only screen and (min-width: 761px) {
+@media only screen and (min-width: 721px) {
 
     /* Universal Desktop Styling */
     .mobile {
@@ -321,6 +331,10 @@ header p , header span {
     .right-box {
         width: 40%;
         padding-top: 16px;
+    }
+
+    .sml-brdr-box {
+        padding-right: 1.3333rem;
     }
 
     .sml-brdr-box figure {
