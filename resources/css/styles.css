@@ -260,15 +260,15 @@ header p , header span {
     line-height: 1.5rem;
 }
 
-.s2side-text {
+.side-text {
     padding-left: 16px;
 }
 
-.s2side-text h3 , .s2side-text p {
+.side-text h3 , .side-text p {
     padding: 4px 0;
 }
 
-.s2side-text a:hover {
+.side-text a:hover {
     font-weight: 700;
     text-decoration: underline;
 }
@@ -337,7 +337,7 @@ header p , header span {
         width: 100%;
     }
 
-    .s2side-text {
+    .side-text {
         margin-left: 16px;
         margin-bottom: 44px;
     }
@@ -414,7 +414,7 @@ header p , header span {
         width: 35%;
     }
 
-    .s2side-text {
+    .side-text {
         width: 65%;
     }
 
